@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="400.0"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.simplecalculator.CalculatorController">
+
+    <children>
+
+        <Label layoutX="40" layoutY="30" prefWidth="80" alignment="CENTER" text="1st Number"/>
+        <TextField fx:id="tfNumber1" layoutX="40" layoutY="50" prefWidth="80"/>
+
+        <ComboBox fx:id="cbOperations" layoutX="140" layoutY="50" prefWidth="60"/>
+
+        <Label layoutX="220" layoutY="30" prefWidth="80" alignment="CENTER" text="2nd Number"/>
+        <TextField fx:id="tfNumber2" layoutX="220" layoutY="50" prefWidth="80"/>
+
+        <Label layoutX="320" layoutY="30" prefWidth="80" alignment="CENTER" text="Result" />
+
+        <Label fx:id="lblResult" layoutX="320" layoutY="50"
+               prefWidth="80" prefHeight="25" text="0" alignment="CENTER"
+               style="-fx-background-color: #f4f4f4; -fx-border-color: #bababa; -fx-border-radius: 3; -fx-background-radius: 3;"/>
+
+        <Button layoutX="140" layoutY="110"
+                text="Compute Result"
+                onAction="#handleCompute"/>
+
+    </children>
+</AnchorPane>
